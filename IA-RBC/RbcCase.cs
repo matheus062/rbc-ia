@@ -8,6 +8,7 @@ namespace IA_RBC
     [Serializable]
     public class RbcCase
     {
+        public int Index { get; set; }
         public string Nome { get; set; }
         public string Artista { get; set; }
         public double Energia { get; set; }
@@ -17,8 +18,9 @@ namespace IA_RBC
         public double Dancavel { get; set; }
         public int Lancamento { get; set; }
 
-        public RbcCase(string nome, string artista, double energia, double barulho, double acustica, double positividade, double dancavel, int lancamento)
+        public RbcCase(string nome, string artista, double energia, double barulho, double acustica, double positividade, double dancavel, int lancamento, int index = 0)
         {
+            this.Index = index;
             this.Nome = nome;
             this.Artista = artista;
             this.Energia = energia;

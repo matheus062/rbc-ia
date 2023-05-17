@@ -15,6 +15,8 @@ namespace IA_RBC
         public double SimPositividade { get; set; }
         public double SimDancavel { get; set; }
         public double SimLancamento { get; set; }
+        public string Nome { get; set; }
+        public RbcCase CasoAnalisado { get; set; }
 
     }
 }

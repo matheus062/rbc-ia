@@ -40,13 +40,13 @@ namespace IA_RBC
             using (var reader = new StreamReader(@"songs.csv"))
             {
                 List<string> listA = new List<string>();
-
+                ObservableCollection<RbcCase> database = new ObservableCollection<RbcCase>();
                 var header = reader.ReadLine().Split(';');
 
                 while (!reader.EndOfStream)
                 {
                     var song = reader.ReadLine().Split(';');
-                    this.Database.Add(new RbcCase(
+                    database.Add(new RbcCase(
                         song[0],
                         song[1],
                         Convert.ToDouble(song[2], CultureInfo.InvariantCulture),
@@ -57,8 +57,14 @@ namespace IA_RBC
                         Convert.ToInt16(song[7])
                     ));
                 }
-            }
 
+                int count = 1;
+                foreach (var item in database)
+                {
+                    RbcCase rbc = new RbcCase(item.Nome, item.Artista, item.Energia, item.Barulho, item.Acustica, item.Positividade, item.Dancavel, item.Lancamento, count++);
+                    this.Database.Add(rbc);
+                }
+            }
             // TODO > Alterar para GridView
             database.ItemsSource = this.Database;
         }
@@ -107,12 +113,14 @@ namespace IA_RBC
                     (escolha.Lancamento > 2016) ? 2 :
                     (escolha.Lancamento > 2021) ? 3 : 4;
                 result.Index = i;
+                result.Nome = escolha.Nome;
                 result.SimEnergia = (1 - Math.Abs(comparar.Energia - escolha.Energia) / 0.72);
                 result.SimBarulho = (1 - Math.Abs(comparar.Barulho - escolha.Barulho) / 11.38);
                 result.SimAcustica = (1 - Math.Abs(comparar.Acustica - escolha.Acustica) / 0.94);
                 result.SimPositividade = (1 - Math.Abs(comparar.Positividade - escolha.Positividade) / 0.91);
                 result.SimDancavel = (1 - Math.Abs(comparar.Dancavel - escolha.Dancavel) / 0.56);
                 result.SimLancamento = tabelaAnos[ano1, ano2];
+                result.CasoAnalisado = this.Database[index];
                 result.SimTotal = Math.Round((((
                         (result.SimEnergia * this.Weights[0]) +
                         (result.SimBarulho * this.Weights[1]) +
@@ -129,6 +137,16 @@ namespace IA_RBC
             return lista;
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var button = (Button)sender;
+            var result = (RbcResult)button.DataContext;
+            //RbcCase caso = result.CasoAnalisado;
+
+            var popup = new PopupInfo(result);
+            popup.Owner = this;
+            popup.ShowDialog();
+        }
     }
 
 }
