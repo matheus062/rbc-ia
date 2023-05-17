@@ -113,14 +113,13 @@ namespace IA_RBC
                     (escolha.Lancamento > 2016) ? 2 :
                     (escolha.Lancamento > 2021) ? 3 : 4;
                 result.Index = i;
-                result.Nome = escolha.Nome;
                 result.SimEnergia = (1 - Math.Abs(comparar.Energia - escolha.Energia) / 0.72);
                 result.SimBarulho = (1 - Math.Abs(comparar.Barulho - escolha.Barulho) / 11.38);
                 result.SimAcustica = (1 - Math.Abs(comparar.Acustica - escolha.Acustica) / 0.94);
                 result.SimPositividade = (1 - Math.Abs(comparar.Positividade - escolha.Positividade) / 0.91);
                 result.SimDancavel = (1 - Math.Abs(comparar.Dancavel - escolha.Dancavel) / 0.56);
                 result.SimLancamento = tabelaAnos[ano1, ano2];
-                result.CasoAnalisado = this.Database[index];
+                result.CasoAnalisado = comparar;
                 result.SimTotal = Math.Round((((
                         (result.SimEnergia * this.Weights[0]) +
                         (result.SimBarulho * this.Weights[1]) +

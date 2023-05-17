@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IA_RBC"
         mc:Ignorable="d"
-        Title="RBC" Height="450" Width="800">
+        Title="RBC" Height="600" Width="1200">
 
 
 
@@ -22,15 +22,15 @@
             <Label Grid.Row="0" Content="Selecione o caso desejado:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="257" Foreground="White" FontFamily="Courier New" FontSize="14"/>
             <DataGrid Grid.Row="0" x:Name="database" AutoGenerateColumns="False" ItemsSource="{Binding}" Margin="10,40,10,10">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Index:" Binding="{Binding Path=Index}"/>
-                    <DataGridTextColumn Header="Nome:" Binding="{Binding Path=Nome}"/>
-                    <DataGridTextColumn Header="Artista:" Binding="{Binding Path=Artista}"/>
-                    <DataGridTextColumn Header="Energia:" Binding="{Binding Path=Energia}"/>
-                    <DataGridTextColumn Header="Barulho:" Binding="{Binding Path=Barulho}"/>
-                    <DataGridTextColumn Header="Acústica:" Binding="{Binding Path=Acustica}"/>
-                    <DataGridTextColumn Header="Positividade:" Binding="{Binding Path=Positividade}"/>
-                    <DataGridTextColumn Header="Dançavel:" Binding="{Binding Path=Dancavel}"/>
-                    <DataGridTextColumn Header="Lançamento:" Binding="{Binding Path=Lancamento}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Index:" Binding="{Binding Path=Index}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Nome:" Binding="{Binding Path=Nome}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Artista:" Binding="{Binding Path=Artista}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Energia:" Binding="{Binding Path=Energia}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Barulho:" Binding="{Binding Path=Barulho}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Acústica:" Binding="{Binding Path=Acustica}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Positividade:" Binding="{Binding Path=Positividade}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Dançavel:" Binding="{Binding Path=Dancavel}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Lançamento:" Binding="{Binding Path=Lancamento}"/>
                     <DataGridTemplateColumn Header="Detalhes">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -45,10 +45,10 @@
             <Label Content="Resultados:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Height="28" Foreground="White" FontFamily="Courier New" FontSize="14"/>
             <DataGrid Grid.Row="0" x:Name="result" AutoGenerateColumns="False" ItemsSource="{Binding}" Margin="10,40,10,10">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Index:" Binding="{Binding Path=Index}"/>
-                    <DataGridTextColumn Header="Nome:" Binding="{Binding Path=CasoAnalisado.Nome}"/>
-                    <DataGridTextColumn Header="Artista:" Binding="{Binding Path=CasoAnalisado.Artista}"/>
-                    <DataGridTextColumn Header="Similaridade:" Binding="{Binding Path=SimTotal}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Index:" Binding="{Binding Path=Index}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Nome:" Binding="{Binding Path=CasoAnalisado.Nome}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Artista:" Binding="{Binding Path=CasoAnalisado.Artista}"/>
+                    <DataGridTextColumn IsReadOnly="true" Header="Similaridade:" Binding="{Binding Path=SimTotal}"/>
                     <DataGridTemplateColumn Header="Detalhes">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -57,14 +57,6 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
-                <!--<DataTemplate>
-                        <StackPanel  Orientation="Horizontal">
-                            <Label Content="Musica:" IsEnabled="False"/>
-                            <TextBox IsReadOnly="True" Text="{Binding Path=Index}" IsEnabled="False"/>
-                            <Label Content="Similaridade:" IsEnabled="False"/>
-                            <TextBox IsReadOnly="True" Text="{Binding Path=SimTotal}"  IsEnabled="False"/>
-                        </StackPanel>
-                    </DataTemplate>-->                
             </DataGrid>
         </Grid>
         <Button Grid.Row="1" Content="Calcular semelhanças" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152" Click="Button_Click_1" />
