@@ -22,10 +22,15 @@ namespace IA_RBC
     public partial class MainWindow : Window
     {
         //public ObservableCollection<RbcCase> data { get; set; }
+
+        public List<double> Weights { get; set; }
+
+
         public MainWindow()
         {
             InitializeComponent();
             aleatoria();
+            this.Weights = new List<double> { 1.0, 0.2, 0.5, 1.0, 0.8, 0.5 };
         }
 
         ObservableCollection<RbcCase> Database = new ObservableCollection<RbcCase>()
@@ -40,6 +45,11 @@ namespace IA_RBC
             database.ItemsSource = this.Database;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            EditWeight popUp = new EditWeight(this.Weights);
+            popUp.Show();
+        }
     }
 
 }

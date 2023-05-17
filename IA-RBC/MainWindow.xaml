@@ -42,7 +42,7 @@
                 </ListView.View>
             </ListView>
         </Grid>
-        <Button Grid.Row="1" Content="Calcular semelhanças" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152"/>
-        <Button Grid.Column="1" Grid.Row="1" Content="Visualizar/Editar pesos" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152"/>
+        <Button Grid.Row="1" Content="Calcular semelhanças" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152" />
+        <Button Grid.Column="1" Grid.Row="1" Content="Visualizar/Editar pesos" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152" Click="Button_Click"/>
     </Grid>
 </Window>

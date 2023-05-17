@@ -1,0 +1,27 @@
+﻿<Window x:Class="IA_RBC.EditWeight"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IA_RBC"
+        mc:Ignorable="d"
+        Title="Editar pesos" Height="260" Width="180">
+    <Grid Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Energia:" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top"/>
+        <Label Content="Acústica:" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dançavel:" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Barulho:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Positividade:" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lançamento:" HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox IsReadOnly="True" x:Name="energia"  Grid.Column="1" HorizontalAlignment="Center" Margin="0,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" />
+        <TextBox IsReadOnly="True" x:Name="barulho" Grid.Column="1" HorizontalAlignment="Center" Margin="0,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <TextBox IsReadOnly="True" x:Name="acustica" Grid.Column="1" HorizontalAlignment="Center" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <TextBox IsReadOnly="True" x:Name="positividade" Grid.Column="1" HorizontalAlignment="Center" Margin="0,117,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <TextBox IsReadOnly="True" x:Name="dancavel" Grid.Column="1" HorizontalAlignment="Center" Margin="0,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <TextBox IsReadOnly="True" x:Name="lancamento"  Grid.Column="1" HorizontalAlignment="Center" Margin="0,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+    </Grid>
+</Window>
