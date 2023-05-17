@@ -131,7 +131,7 @@ namespace IA_RBC
                 lista.Add(result);
             }
 
-            lista.Sort((x, y) => (x.SimTotal.CompareTo(y.SimTotal)) * -1);
+                lista.Sort((x, y) => (x.SimTotal.CompareTo(y.SimTotal)) * -1);
 
             return lista;
         }

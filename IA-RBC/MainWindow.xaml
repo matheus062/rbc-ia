@@ -31,19 +31,12 @@
                     <DataGridTextColumn IsReadOnly="true" Header="Positividade:" Binding="{Binding Path=Positividade}"/>
                     <DataGridTextColumn IsReadOnly="true" Header="Dançavel:" Binding="{Binding Path=Dancavel}"/>
                     <DataGridTextColumn IsReadOnly="true" Header="Lançamento:" Binding="{Binding Path=Lancamento}"/>
-                    <DataGridTemplateColumn Header="Detalhes">
-                        <DataGridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Button Content="Ver Detalhes" Click="Button_Click_2" />
-                            </DataTemplate>
-                        </DataGridTemplateColumn.CellTemplate>
-                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
         <Grid Grid.Column="1" Background="#FF003A7B">
             <Label Content="Resultados:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Height="28" Foreground="White" FontFamily="Courier New" FontSize="14"/>
-            <DataGrid Grid.Row="0" x:Name="result" AutoGenerateColumns="False" ItemsSource="{Binding}" Margin="10,40,10,10">
+            <DataGrid Grid.Row="0" x:Name="result" AutoGenerateColumns="False" ItemsSource="{Binding}" Margin="10,40,10,10" AllowDrop="True" CanUserAddRows="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn IsReadOnly="true" Header="Index:" Binding="{Binding Path=Index}"/>
                     <DataGridTextColumn IsReadOnly="true" Header="Nome:" Binding="{Binding Path=CasoAnalisado.Nome}"/>
