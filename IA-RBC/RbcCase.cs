@@ -1,22 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace IA_RBC
 {
-    class RbcCase
+    [Serializable]
+    public class RbcCase
     {
+        public string Nome { get; set; }
+        public string Artista { get; set; }
+        public double Energia { get; set; }
+        public double Barulho { get; set; }
+        public double Acustica { get; set; }
+        public double Positividade { get; set; }
+        public double Dancavel { get; set; }
+        public int Lancamento { get; set; }
 
-        public RbcCase(int campo1, string campo2, string campo3)
+        public RbcCase(string nome, string artista, double energia, double barulho, double acustica, double positividade, double dancavel, int lancamento)
         {
-            this.Campo1 = campo1;
-            this.Campo2 = campo2;
-            this.Campo3 = campo3;
+            this.Nome = nome;
+            this.Artista = artista;
+            this.Energia = energia;
+            this.Barulho = barulho;
+            this.Acustica = acustica;
+            this.Positividade = positividade;
+            this.Dancavel = dancavel;
+            this.Lancamento = lancamento;
         }
-
-        public int Campo1 { get; set; }
-        public string Campo2 { get; set; }
-        public string Campo3 { get; set; }
-
     }
 }

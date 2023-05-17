@@ -5,23 +5,95 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IA_RBC"
         mc:Ignorable="d"
-        Title="Editar pesos" Height="260" Width="180">
-    <Grid Margin="0,0,0,1">
+        Title="Editar pesos" Height="265" Width="287">
+    <Grid Margin="0,0,0,1" Background="#FF003A7B">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Energia:" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top"/>
-        <Label Content="Acústica:" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top"/>
-        <Label Content="Dançavel:" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top"/>
-        <Label Content="Barulho:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top"/>
-        <Label Content="Positividade:" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top"/>
-        <Label Content="Lançamento:" HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top" Height="26"/>
-        <TextBox IsReadOnly="True" x:Name="energia"  Grid.Column="1" HorizontalAlignment="Center" Margin="0,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" />
-        <TextBox IsReadOnly="True" x:Name="barulho" Grid.Column="1" HorizontalAlignment="Center" Margin="0,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
-        <TextBox IsReadOnly="True" x:Name="acustica" Grid.Column="1" HorizontalAlignment="Center" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
-        <TextBox IsReadOnly="True" x:Name="positividade" Grid.Column="1" HorizontalAlignment="Center" Margin="0,117,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
-        <TextBox IsReadOnly="True" x:Name="dancavel" Grid.Column="1" HorizontalAlignment="Center" Margin="0,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
-        <TextBox IsReadOnly="True" x:Name="lancamento"  Grid.Column="1" HorizontalAlignment="Center" Margin="0,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Energia:" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" FontFamily="Courier New"/>
+        <Label Content="Acústica:" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" FontFamily="Courier New"/>
+        <Label Content="Dançavel:" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" FontFamily="Courier New"/>
+        <Label Content="Barulho:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" FontFamily="Courier New"/>
+        <Label Content="Positividade:" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" FontFamily="Courier New"/>
+        <Label Content="Lançamento:" HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top"  FontSize="14" Foreground="White" FontFamily="Courier New"/>
+        <Grid  Grid.Column="1" Height="24" VerticalAlignment="Top" Margin="16,18,16,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="12" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12" />
+                <RowDefinition Height="12" />
+            </Grid.RowDefinitions>
+            <TextBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" x:Name="energia" Margin="0,0,12,0" Grid.ColumnSpan="2"/>
+            <RepeatButton Name="energiaUp"  Grid.Column="1" Grid.Row="0" FontSize="8" FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Click="energiaUp_Click">5</RepeatButton>
+            <RepeatButton Name="energiaDown"  Grid.Column="1" Grid.Row="1" FontSize="8"  FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="12" VerticalAlignment="Bottom" Click="energiaDown_Click">6</RepeatButton>
+        </Grid>
+        <Grid  Grid.Column="1" Height="24"  VerticalAlignment="Top" Margin="16,49,16,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="12" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12" />
+                <RowDefinition Height="12" />
+            </Grid.RowDefinitions>
+            <TextBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" x:Name="barulho" Margin="0,0,12,0" Grid.ColumnSpan="2"/>
+            <RepeatButton Name="barulhoUp"  Grid.Column="1" Grid.Row="0" FontSize="8" FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Click="barulhoUp_Click">5</RepeatButton>
+            <RepeatButton Name="barulhoDown"  Grid.Column="1" Grid.Row="1" FontSize="8"  FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="12" VerticalAlignment="Bottom" Click="barulhoDown_Click">6</RepeatButton>
+        </Grid>
+        <Grid  Grid.Column="1" Height="24"  VerticalAlignment="Top" Margin="16,80,16,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="12" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12" />
+                <RowDefinition Height="12" />
+            </Grid.RowDefinitions>
+            <TextBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" x:Name="acustica" Margin="0,0,12,0" Grid.ColumnSpan="2"/>
+            <RepeatButton Name="acusticaUp"  Grid.Column="1" Grid.Row="0" FontSize="8" FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Click="acusticaUp_Click">5</RepeatButton>
+            <RepeatButton Name="acusticaDown"  Grid.Column="1" Grid.Row="1" FontSize="8"  FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="12" VerticalAlignment="Bottom" Click="acusticaDown_Click">6</RepeatButton>
+        </Grid>
+        <Grid  Grid.Column="1" Height="24"  VerticalAlignment="Top" Margin="16,109,16,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="12" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12" />
+                <RowDefinition Height="12" />
+            </Grid.RowDefinitions>
+            <TextBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" x:Name="positividade" Margin="0,0,12,0" Grid.ColumnSpan="2"/>
+            <RepeatButton Name="positividadeUp"  Grid.Column="1" Grid.Row="0" FontSize="8" FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Click="positividadeUp_Click">5</RepeatButton>
+            <RepeatButton Name="positividadeDown"  Grid.Column="1" Grid.Row="1" FontSize="8"  FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="12" VerticalAlignment="Bottom" Click="positividadeDown_Click">6</RepeatButton>
+        </Grid>
+        <Grid  Grid.Column="1" Height="24"  VerticalAlignment="Top" Margin="16,140,16,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="12" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12" />
+                <RowDefinition Height="12" />
+            </Grid.RowDefinitions>
+            <TextBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" x:Name="dancavel" Margin="0,0,12,0" Grid.ColumnSpan="2"/>
+            <RepeatButton Name="dancavelUp"  Grid.Column="1" Grid.Row="0" FontSize="8" FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Click="dancavelUp_Click">5</RepeatButton>
+            <RepeatButton Name="dancavelDown"  Grid.Column="1" Grid.Row="1" FontSize="8"  FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="12" VerticalAlignment="Bottom" Click="dancavelDown_Click">6</RepeatButton>
+        </Grid>
+        <Grid  Grid.Column="1" Height="24"  VerticalAlignment="Top" Margin="16,171,16,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="12" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12" />
+                <RowDefinition Height="12" />
+            </Grid.RowDefinitions>
+            <TextBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" x:Name="lancamento" Margin="0,0,12,0" Grid.ColumnSpan="2"/>
+            <RepeatButton Name="lancamentoUp"  Grid.Column="1" Grid.Row="0" FontSize="8" FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Click="lancamentoUp_Click" HorizontalAlignment="Left" Width="12">5</RepeatButton>
+            <RepeatButton Name="lancamentoDown"  Grid.Column="1" Grid.Row="1" FontSize="8"  FontFamily="Marlett" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="12" VerticalAlignment="Bottom" Click="lancamentoDown_Click">6</RepeatButton>
+        </Grid>
     </Grid>
 </Window>

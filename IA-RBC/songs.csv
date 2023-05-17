@@ -1,0 +1,101 @@
+﻿name;Artist;energy;loudness;acousticness;valence;danceability;year
+Blinding Lights;The Weeknd;0.73;-5.934;0.00146;0.334;0.514;2019
+Shape of You;Ed Sheeran;0.652;-3.183;0.581;0.931;0.825;2017
+Dance Monkey;Tones And I;0.588;-6.4;0.692;0.513;0.824;2019
+Someone You Loved;Lewis Capaldi;0.405;-5.679;0.751;0.446;0.501;2018
+Rockstar;Post Malone featuring 21 Savage;0.52;-6.136;0.124;0.129;0.585;2017
+Sunflower;Post Malone and Swae Lee;0.479;-5.574;0.556;0.913;0.76;2018
+One Dance;Drake featuring Wizkid and Kyla;0.625;-5.609;0.00776;0.37;0.792;2016
+Closer;The Chainsmokers featuring Halsey;0.524;-5.599;0.414;0.661;0.748;2016
+Stay;The Kid Laroi and Justin Bieber;0.31;-10.164;0.945;0.125;0.621;2021
+Believer;Imagine Dragons;0.78;-4.374;0.0622;0.666;0.776;2017
+SeÃ±orita;Shawn Mendes and Camila Cabello;0.548;-6.049;0.0392;0.749;0.759;2019
+Perfect;Ed Sheeran;0.663;-6.818;0.433;0.6;0.634;2017
+Heat Waves;Glass Animals;0.525;-6.9;0.44;0.531;0.761;2020
+Say You Won't Let Go;James Arthur;0.557;-7.398;0.695;0.494;0.358;2016
+Starboy;The Weeknd featuring Daft Punk;0.587;-7.015;0.141;0.486;0.679;2016
+Bad Guy;Billie Eilish;0.425;-10.965;0.328;0.562;0.701;2019
+Thinking Out Loud;Ed Sheeran;0.445;-6.061;0.474;0.591;0.781;2014
+Lucid Dreams;Juice WRLD;0.566;-7.23;0.349;0.218;0.511;2018
+Don't Start Now;Dua Lipa;0.185;-12.205;0.876;0.707;0.498;2019
+Lovely;Billie Eilish and Khalid;0.296;-10.109;0.934;0.12;0.351;2018
+Watermelon Sugar;Harry Styles;0.816;-4.209;0.122;0.557;0.548;2020
+God's Plan;Drake;0.449;-9.211;0.0332;0.357;0.754;2018
+Photograph;Ed Sheeran;0.379;-10.48;0.607;0.22;0.718;2014
+Bohemian Rhapsody;Queen;0.402;-9.961;0.288;0.228;0.392;1975
+Something Just Like This;The Chainsmokers and Coldplay;0.635;-6.769;0.0498;0.446;0.617;2017
+Sweater Weather;The Neighbourhood;0.807;-2.81;0.0495;0.398;0.612;2012
+Shallow;Lady Gaga and Bradley Cooper;0.385;-6.362;0.371;0.323;0.572;2018
+As It Was;Harry Styles;0.731;-5.338;0.342;0.662;0.52;2022
+Love Yourself;Justin Bieber;0.378;-9.828;0.835;0.515;0.609;2015
+Circles;Post Malone;0.762;-3.497;0.192;0.553;0.695;2019
+Sad!;XXXTentacion;0.613;-4.88;0.258;0.473;0.74;2018
+Take Me to Church;Hozier;0.664;-5.303;0.634;0.437;0.566;2013
+All of Me;John Legend;0.264;-7.064;0.922;0.331;0.422;2013
+Thunder;Imagine Dragons;0.89;-5.175;0.000147;0.259;0.502;2017
+7 Rings;Ariana Grande;0.317;-10.732;0.592;0.327;0.778;2019
+Goosebumps;Travis Scott featuring Kendrick Lamar;0.728;-3.37;0.0847;0.43;0.841;2016
+Jocelyn Flores;XXXTentacion;0.391;-9.144;0.469;0.437;0.872;2017
+Havana;Camila Cabello featuring Young Thug;0.523;-4.333;0.184;0.394;0.765;2017
+Stressed Out;Twenty One Pilots;0.637;-5.677;0.0462;0.648;0.734;2015
+XO Tour Llif3;Lil Uzi Vert;0.75;-6.366;0.00264;0.401;0.732;2017
+Counting Stars;OneRepublic;0.705;-4.972;0.0654;0.477;0.664;2013
+New Rules;Dua Lipa;0.7;-6.021;0.00265;0.608;0.762;2017
+Wake Me Up;Avicii;0.783;-5.697;0.0038;0.643;0.532;2013
+Riptide;Vance Joy;0.731;-6.694;0.431;0.51;0.484;2013
+Happier;Marshmello and Bastille;0.67;-6.009;0.121;0.472;0.733;2018
+Humble;Kendrick Lamar;0.621;-6.638;0.000282;0.421;0.908;2017
+Let Her Go;Passenger;0.545;-7.346;0.365;0.243;0.479;2012
+The Hills;The Weeknd;0.564;-7.063;0.0671;0.137;0.585;2015
+Sicko Mode;Travis Scott featuring Drake;0.73;-3.714;0.00513;0.446;0.834;2018
+Can't Hold Us;Macklemore & Ryan Lewis featuring Ray Dalton;0.871;-6.351;0.000744;0.219;0.556;2011
+Good 4 U;Olivia Rodrigo;0.664;-5.044;0.335;0.688;0.563;2021
+Sorry;Justin Bieber;0.643;-7.811;8.47E-05;0.492;0.73;2015
+One Kiss;Calvin Harris and Dua Lipa;0.862;-3.24;0.037;0.592;0.791;2018
+Let Me Love You;DJ Snake featuring Justin Bieber;0.716;-5.371;0.0863;0.163;0.649;2016
+Drivers License;Olivia Rodrigo;0.431;-8.81;0.768;0.137;0.561;2021
+Lean On;Major Lazer and DJ Snake featuring MØ;0.809;-3.081;0.00346;0.274;0.723;2015
+Treat You Better;Shawn Mendes;0.819;-4.078;0.106;0.747;0.444;2016
+Roses (Imanbek remix);Saint Jhn with Imanbek;0.719;-5.472;0.0143;0.863;0.769;2019
+Better Now;Post Malone;0.578;-5.804;0.331;0.341;0.68;2018
+Stay with Me;Sam Smith;0.42;-6.444;0.588;0.184;0.418;2014
+Congratulations;Post Malone featuring Quavo;0.804;-4.183;0.215;0.492;0.63;2016
+Faded;Alan Walker;0.627;-5.085;0.0281;0.159;0.468;2015
+Without Me;Halsey;0.669;-2.827;0.00286;0.662;0.908;2018
+Industry Baby;Lil Nas X featuring Jack Harlow;0.704;-7.409;0.0203;0.894;0.736;2021
+Lose Yourself;Eminem;0.744;-4.565;0.00868;0.0612;0.692;2002
+Memories;Maroon 5;0.684;-6.306;0.00979;0.556;0.34;2019
+Demons;Imagine Dragons;0.71;-3.015;0.19;0.428;0.505;2012
+Mr. Brightside;The Killers;0.911;-5.23;0.00121;0.236;0.352;2004
+Uptown Funk;Mark Ronson featuring Bruno Mars;0.609;-7.223;0.00801;0.928;0.856;2014
+Too Good at Goodbyes;Sam Smith;0.372;-8.237;0.64;0.476;0.681;2017
+Levitating;Dua Lipa featuring DaBaby;0.825;-3.787;0.00883;0.915;0.702;2020
+I Took a Pill in IbizaÂ (SeebÂ Remix);Mike Posner and Seeb;0.714;-6.645;0.0353;0.71;0.664;2015
+Don't Let Me Down;The Chainsmokers featuring Daya;0.502;-7.539;0.699;0.674;0.455;2016
+Thank U, Next; Next;0.653;-5.634;0.229;0.412;0.717;2018
+I Don't Care;Ed Sheeran and Justin Bieber;0.676;-5.041;0.0902;0.843;0.798;2019
+Dakiti;Bad Bunny and Jhay Cortez;0.573;-10.059;0.401;0.145;0.731;2020
+Montero (Call Me by Your Name);Lil Nas X;0.503;-6.725;0.293;0.71;0.593;2021
+Mood;24kGoldn and Iann Dior;0.74;-6.595;0.696;0.532;0.768;2020
+Do I Wanna Know?;Arctic Monkeys;0.532;-7.596;0.186;0.405;0.548;2013
+Unforgettable;French Montana featuring Swae Lee;0.769;-5.043;0.0293;0.733;0.726;2017
+Dynamite;BTS;0.783;-3.724;0.00379;0.816;0.751;2020
+Despacito (remix);Luis Fonsi and Daddy Yankee featuring Justin Bieber;0.816;-4.353;0.228;0.816;0.653;2017
+Moonlight;XXXTentacion;0.537;-5.723;0.556;0.711;0.921;2018
+Wonderwall;Oasis;0.893;-4.097;0.000509;0.434;0.375;1995
+No Role Modelz;J. Cole;0.521;-8.492;0.324;0.494;0.69;2014
+That's What I Like;Bruno Mars;0.56;-4.961;0.013;0.86;0.853;2016
+The Box;Roddy Ricch;0.586;-6.687;0.104;0.642;0.896;2019
+Till I Collapse;Eminem featuring Nate Dogg;0.847;-3.237;0.0622;0.1;0.548;2002
+There's Nothing Holdin' Me Back;Shawn Mendes;0.813;-4.063;0.38;0.969;0.866;2017
+Stitches;Shawn Mendes;0.754;-6.684;0.0151;0.755;0.752;2015
+Cheap Thrills;Sia;0.698;-5.608;0.0472;0.732;0.628;2016
+Smells Like Teen Spirit;Nirvana;0.912;-4.556;2.55E-05;0.72;0.502;1991
+See You Again;Wiz Khalifa featuring Charlie Puth;0.559;-9.222;0.371;0.62;0.558;2015
+I'm Yours;Jason Mraz;0.633;-6.726;0.0886;0.505;0.646;2008
+I Like Me Better;Lauv;0.505;-7.621;0.534;0.419;0.753;2017
+7 Years;Lukas Graham;0.473;-5.829;0.287;0.34;0.765;2015
+Yellow;Coldplay;0.661;-7.227;0.00239;0.285;0.429;2000
+Sugar;Maroon 5;0.816;-4.209;0.122;0.557;0.548;2014
+Despacito;Luis Fonsi featuring Daddy Yankee;0.797;-4.787;0.198;0.839;0.655;2017
+Don't Stop Me Now;Queen;0.553;-5.51;0.71;0.419;0.471;1979

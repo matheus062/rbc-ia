@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:IA_RBC"
         mc:Ignorable="d"
         Title="RBC" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF003A7B">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
@@ -15,34 +15,49 @@
             <RowDefinition Height="90*"/>
             <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
-        <Grid Grid.Column="0">
-            <Label Grid.Row="0" Content="Selecione o caso desejado:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="154"/>
+        <Grid Grid.Column="0" Background="#FF003A7B">
+            <Label Grid.Row="0" Content="Selecione o caso desejado:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="257" Foreground="White" FontFamily="Courier New" FontSize="14"/>
             <ListBox Grid.Row="0" x:Name="database" ItemsSource="{Binding}" Margin="10,40,10,10">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel  Orientation="Horizontal">
-                            <Label Content="Campo1 :"/>
-                            <TextBox Text="{Binding Path=Campo1}" />
-                            <Label Content="Campo2 :"/>
-                            <TextBox Text="{Binding Path=Campo2}"/>
-                            <Label Content="Campo3 :"/>
-                            <TextBox Text="{Binding Path=Campo3}"/>
+                            <Label Content="Nome:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Nome}" />
+                            <Label Content="Artista:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Artista}" />
+                            <Label Content="Energia:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Energia}" />
+                            <Label Content="Barulho:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Barulho}"/>
+                            <Label Content="Acústica:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Acustica}"/>
+                            <Label Content="Positividade:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Positividade}" />
+                            <Label Content="Dançavel:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Dancavel}" />
+                            <Label Content="Lançamento:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Lancamento}" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
         </Grid>
-        <Grid Grid.Column="1">
-            <Label Content="Resultados:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Height="28"/>
-            <ListView Margin="10,36,10,10">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
+        <Grid Grid.Column="1" Background="#FF003A7B">
+            <Label Content="Resultados:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Height="28" Foreground="White" FontFamily="Courier New" FontSize="14"/>
+            <ListBox Grid.Row="0" x:Name="result" ItemsSource="{Binding}" Margin="10,40,10,10">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel  Orientation="Horizontal">
+                            <Label Content="Musica:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=Index}" />
+                            <Label Content="Similaridade:"/>
+                            <TextBox IsReadOnly="True" Text="{Binding Path=SimTotal}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
-        <Button Grid.Row="1" Content="Calcular semelhanças" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152" />
+        <Button Grid.Row="1" Content="Calcular semelhanças" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152" Click="Button_Click_1" />
         <Button Grid.Column="1" Grid.Row="1" Content="Visualizar/Editar pesos" HorizontalAlignment="Center" VerticalAlignment="Center" Width="152" Click="Button_Click"/>
     </Grid>
 </Window>
